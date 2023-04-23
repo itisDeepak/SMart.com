@@ -1,0 +1,22 @@
+nav {
+  margin-bottom: 1em !important;
+}
+
+.cart {
+  box-shadow: 0 0 5px #DDD;
+  padding: 20px;
+}
+#theme-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #596AFF;
+  margin-top:10px;
+}
+
+.changeTheme {
+  background: url(background2.jpg);
+  color: #eee;
+}
+body{
+background:url(imagebg.png);
+}

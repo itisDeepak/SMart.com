@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"	>
+<head>
+  <meta charset="UTF-8">
+  <title>Login form </title>
+  <link rel="stylesheet" href="loginpage.css">
+<link rel="stylesheet" href="./style.css">
+
+
+</head>
+<script>
+function validate(){
+var x=document.getElementById("userName").value;
+var y=document.getElementById("userPassword").value;
+var x1=x.length;
+var x2=y.length;
+id(x1<4){
+window.alert("Please enter valid username");
+}
+if(x2<8){
+window.alert("Please enter strong password");
+}
+}
+</script>
+
+
+<body>
+
+<div class="logo text-center">
+  <h1>SMart</h1>
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Login to your account</h2>
+    <form action="" id="formvalidate">
+      <div class="input-group">
+        <input class="form-control"  id="userName" type="text" placeholder="Enter username" />
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <input class="form-control"  id="userPassword" type="password" placeholder="Enter Password" />
+        <span class="lighting"></span>
+      </div>
+
+      <button type="submit" id="login" onclick="validate()">Login</button>
+      <div class="clearfix supporter">
+        <div class="pull-left remember-me">
+          <input id="rememberMe" type="checkbox">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <a class="forgot pull-right" href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="#">Don't have an accout? <span class="text-primary">Create One</span></a>
+  </div>
+</div>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="java.js"></script>	
+
+</body>
+</html>
